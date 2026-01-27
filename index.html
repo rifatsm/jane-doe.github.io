@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!-- 
+    Student Name: Jane Doe
+    Student ID: 20240123
+    Course: Web Development Fundamentals - WEB101
+    Assignment: HTML5 Portfolio Page Assignment (CSS Extension)
+    Submission Date: January 27, 2026
+-->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jane Doe | Web Developer Portfolio</title>
+
+    <!-- EXTERNAL CSS (Primary Styling) -->
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!-- INTERNAL CSS (Page-specific / instructional overrides) -->
+    <style>
+        /* INTERNAL CSS: Used intentionally for demonstration */
+        section h2 {
+            letter-spacing: 1px;
+        }
+
+        .inline-demo {
+            font-style: italic;
+            color: #764ba2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <img src="https://www.isleep.com/wp-content/uploads/2022/03/jane-doe-512px.jpg"
+                 alt="Professional headshot of Jane Doe"
+                 width="200"
+                 height="200">
+
+            <h1>Jane Doe</h1>
+            <p>Aspiring Web Developer | Creative Problem Solver</p>
+        </header>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+
+            <section id="about">
+                <h2>About Me</h2>
+
+                <article>
+                    <h3>My Journey</h3>
+
+                    <p>
+                        Hello! I'm <strong>Jane Doe</strong>, a web development student passionate
+                        about creating accessible and responsive websites.
+                    </p>
+
+                    <p class="inline-demo" style="background-color: #f8f9fa; padding: 10px;">
+                        This paragraph uses <strong>inline CSS</strong> for demonstration purposes only.
+                    </p>
+                </article>
+            </section>
+
+            <section id="skills">
+                <h2>Technical Skills</h2>
+
+                <table>
+                    <caption>Skills Overview</caption>
+                    <thead>
+                        <tr>
+                            <th>Technology</th>
+                            <th>Level</th>
+                            <th>Experience (Months)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML5</td>
+                            <td>Advanced</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>CSS3</td>
+                            <td>Intermediate</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>Intermediate</td>
+                            <td>5</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="projects">
+                <h2>Featured Project</h2>
+
+                <article>
+                    <h3>Personal Finance Tracker</h3>
+                    <p>
+                        A responsive budgeting application built using HTML, CSS, and JavaScript.
+                    </p>
+
+                    <figure>
+                        <img src="https://www.slideteam.net/media/catalog/product/cache/1280x720/b/u/budget_tracking_dashboard_with_project_expenses_slide01.jpg"
+                             alt="Finance tracker dashboard">
+                        <figcaption>Finance Tracker Dashboard</figcaption>
+                    </figure>
+                </article>
+            </section>
+
+            <section id="contact">
+                <h2>Contact Me</h2>
+
+                <form>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Jane Doe | Web Development Portfolio</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
