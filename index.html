@@ -142,7 +142,193 @@
 
     </div>
 
-    <script src="scripts/main.js"></script>
+    <!-- ===========================================================
+       ACTIVITY 1: Projects loaded from local JSON via AJAX
+       =========================================================== -->
+  <section id="ajax-projects" class="section ajax-section">
+    <div class="container">
+      <h2 class="section-title">
+        My Projects
+        <span class="ajax-badge">Loaded via AJAX</span>
+      </h2>
+      <p class="section-subtitle">
+        These project cards are <strong>not hardcoded</strong> in HTML. 
+        They are fetched from a local <code>data/projects.json</code> file 
+        using the Fetch API when the page loads.
+      </p>
+
+      <!-- This empty div gets filled by Activity 1 JavaScript -->
+      <div id="ajax-projects-container">
+        <!-- JavaScript will inject project cards here -->
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===========================================================
+       ACTIVITY 2: Random Quote from External API
+       =========================================================== -->
+  <section id="quote-section" class="section ajax-section alt-bg">
+    <div class="container">
+      <h2 class="section-title">
+        Need Some Inspiration?
+        <span class="ajax-badge">External API</span>
+      </h2>
+      <p class="section-subtitle">
+        Click the button below to fetch a <strong>random inspirational quote</strong> 
+        from the Quotable.io API. Each click makes a fresh AJAX GET request 
+        to an external server!
+      </p>
+
+      <div class="quote-widget">
+        <!-- This div will show the quote after fetch -->
+        <div id="quote-display">
+          <p class="search-placeholder">Click the button to load a quote ✨</p>
+        </div>
+
+        <button id="quote-btn" class="ajax-btn">
+          ✨ Get Inspiration
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===========================================================
+       ACTIVITY 3: AJAX Contact Form (no page reload!)
+       =========================================================== -->
+  <section id="contact-section" class="section ajax-section">
+    <div class="container">
+      <h2 class="section-title">
+        Contact Me
+        <span class="ajax-badge">AJAX POST Request</span>
+      </h2>
+      <p class="section-subtitle">
+        This form submits using AJAX — <strong>the page will NOT reload</strong> 
+        when you hit send! We prevent the default form behavior and use 
+        <code>fetch()</code> with a POST request instead.
+      </p>
+
+      <form id="ajax-contact-form" class="contact-form" novalidate>
+        <div class="form-group">
+          <label for="contact-name">Your Name</label>
+          <input
+            type="text"
+            id="contact-name"
+            name="name"
+            placeholder="e.g., John Smith"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="contact-email">Your Email</label>
+          <input
+            type="email"
+            id="contact-email"
+            name="email"
+            placeholder="e.g., john@example.com"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="contact-subject">Subject</label>
+          <input
+            type="text"
+            id="contact-subject"
+            name="subject"
+            placeholder="What's this about?"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="contact-message">Message</label>
+          <textarea
+            id="contact-message"
+            name="message"
+            rows="5"
+            placeholder="Write your message here..."
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="ajax-btn">
+          Send Message
+        </button>
+
+        <!-- This div shows success/error feedback after submission -->
+        <div id="form-status"></div>
+      </form>
+    </div>
+  </section>
+
+
+  <!-- ===========================================================
+       ACTIVITY 4: GitHub Live Stats
+       =========================================================== -->
+  <section id="github-section" class="section ajax-section alt-bg">
+    <div class="container">
+      <h2 class="section-title">
+        GitHub Profile
+        <span class="ajax-badge">Chained API Calls</span>
+      </h2>
+      <p class="section-subtitle">
+        This activity makes <strong>two chained AJAX calls</strong> to the GitHub API — 
+        one for profile info and one for recent repositories. Click the button 
+        to load live, up-to-date data!
+      </p>
+
+      <div class="github-widget">
+        <button id="load-stats-btn" class="ajax-btn">
+          Load GitHub Stats
+        </button>
+
+        <!-- GitHub profile card appears here after click -->
+        <div id="github-stats-container">
+          <p class="search-placeholder">Click the button to load GitHub stats.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===========================================================
+       ACTIVITY 5: Live Search with Debouncing
+       =========================================================== -->
+  <section id="search-section" class="section ajax-section">
+    <div class="container">
+      <h2 class="section-title">
+        Explore Tech Topics
+        <span class="ajax-badge">Real-Time Search + Debounce</span>
+      </h2>
+      <p class="section-subtitle">
+        Type a technology or topic below. This makes a <strong>live AJAX call</strong> 
+        to the Wikipedia API as you type — using a <em>debounce technique</em> 
+        to avoid sending too many requests!
+      </p>
+
+      <div class="search-widget">
+        <input
+          type="text"
+          id="skill-search"
+          class="search-input"
+          placeholder="Try: JavaScript, Python, React, CSS..."
+        />
+
+        <!-- Search results appear here in real time -->
+        <div id="search-results">
+          <p class="search-placeholder">Start typing to search...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Load our AJAX JavaScript file — placed at BOTTOM of body -->
+  <!-- This ensures all HTML elements exist before JS runs -->
+  <script src="scripts/ajax-activities.js"></script>
+  <script src="scripts/main.js"></script>
 </body>
 
 </html>
