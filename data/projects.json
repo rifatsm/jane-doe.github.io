@@ -1,0 +1,36 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "IST 242 ASG02 Personal Library Manager",
+      "description": "A system that allows a user to store, search, update, analyze, and persist information about books in a personal library.",
+      "tech": ["Python"],
+      "github": "https://github.com/rifatsm/S26_IST242_ASG02-git",
+      "status": "completed"
+    },
+    {
+      "id": 2,
+      "title": "IST 242 ASG03 Vehicle Hierarchy",
+      "description": "A program to leverage inheritance and polymorphism to build a vehicle class hierarchy in Python.",
+      "tech": ["Python"],
+      "github": "https://github.com/rifatsm/S26_IST242_ASG03_mrri",
+      "status": "completed"
+    },
+    {
+      "id": 3,
+      "title": "IST 242 ASG04 Music Track Hierarchy",
+      "description": "A music-track class hierarchy in Python.",
+      "tech": ["Python"],
+      "github": "https://github.com/rifatsm/Sp26-IST242-ASG04-starter-code",
+      "status": "in-progress"
+    },
+    {
+      "id": 4,
+      "title": "Portfolio Website",
+      "description": "This very website! Built with clean HTML, CSS, and vanilla JavaScript.",
+      "tech": ["HTML", "CSS", "JavaScript"],
+      "github": "https://github.com/rifatsm/jane-doe.github.io",
+      "status": "in-progress"
+    }
+  ]
+}
